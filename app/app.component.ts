@@ -12,23 +12,7 @@ import {UserComponent} from './user.component';
 
 @Component({
     selector:'pm-app',
-    template:`
-        <div>
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <a class="navbar-brand">{{pageTitle}}</a>
-                    <ul class="nav navbar-nav">
-                        <li><a [routerLink]="['Welcome']">Home</a></li>
-                        <li><a [routerLink]="['Products']">Product List</a></li>
-                        <li><a [routerLink]="['User']">User</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="container">
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    `,
+    templateUrl:'app/app.component.html',
     directives:[ROUTER_DIRECTIVES],
     providers:[ProductService,HTTP_PROVIDERS,ROUTER_PROVIDERS]
 })

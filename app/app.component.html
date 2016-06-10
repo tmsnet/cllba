@@ -1,0 +1,45 @@
+<!--<div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand">{{pageTitle}}</a>
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['Welcome']">Home</a></li>
+                <li><a [routerLink]="['Products']">Product List</a></li>
+                <li><a [routerLink]="['User']">User</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>-->
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand">{{pageTitle}}</a>
+    </div>
+</nav>
+<div class="container">
+    <div class="col-sm-3">
+        <dl>
+            <dt><span class="glyphicon glyphicon-user"></span>会员</dt>
+            <dd><span class="glyphicon glyphicon-registration-mark"></span>注册</dd>
+            <dd><span class="glyphicon glyphicon-log-in"></span>登录</dd>
+            <dd><span class="glyphicon glyphicon-link"></span>浏览磁力链</dd>
+            <dd><span class="glyphicon glyphicon-search"></span>查找磁力链</dd>
+            <dd><span class="glyphicon glyphicon-yen"></span>会员续费</dd>
+            <dd><span class="glyphicon glyphicon-gift"></span>购买115产品</dd>
+            <dt><span class="glyphicon glyphicon-user"></span>管理员</dt>
+            <dd><span class="glyphicon glyphicon-briefcase"></span>维护磁力链</dd>
+            <dd><span class="glyphicon glyphicon-remove-circle"></span>封禁会员</dd>
+            <dd><span class="glyphicon glyphicon-ok-circle"></span>解封会员</dd>
+            <dd><span class="glyphicon glyphicon-yen"></span>帮会员续费</dd>
+            <dt><span class="glyphicon glyphicon-user"></span>创建者</dt>
+            <dd><span class="glyphicon glyphicon-tag"></span>创建vip券</dd>
+            <dd><span class="glyphicon glyphicon-cog"></span>允许管理员</dd>
+        </dl>
+    </div>
+    <div class="col-sm-9">
+        <router-outlet></router-outlet>
+    </div>
+</div>
